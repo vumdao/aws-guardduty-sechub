@@ -1,0 +1,7 @@
+config:
+  aws-guardduty-sechub:webhook_url:
+    secure: AAABAOZM52vk7tEvIObBglPwGrKr12345
+  aws:allowedAccountIds:
+  - "123456789012"
+  aws:profile: myprofile
+  aws:region: us-west-2

@@ -1,0 +1,110 @@
+{
+  "version": "0",
+  "id": "12345abc-ca56-771b-cd1b-710550598e37",
+  "detail-type": "Security Hub Findings - Imported",
+  "source": "aws.securityhub",
+  "account": "123456789012",
+  "time": "2021-01-05T01:20:33Z",
+  "region": "us-west-2",
+  "resources": [
+    "arn:aws:securityhub:us-west-2::product/aws/guardduty/arn:aws:guardduty:us-west-2:123456789012:detector/012343feb722b1388a5ddc6dd4abcdef/finding/1234680e481690b44f7cc7e221abcdef"
+  ],
+  "detail": {
+    "findings": [
+      {
+        "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/guardduty",
+        "Types": [
+          "Software and Configuration Checks/Backdoor:EC2.C&CActivity.B"
+        ],
+        "SourceUrl": "https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/findings?macros=current&fId=1234680e481690b44f7cc7e221abcdef",
+        "Description": "EC2 instance i-99999999 is communicating outbound with a known Command & Control Server 198.51.100.0 located in GeneratedFindingCountryName.",
+        "SchemaVersion": "2018-10-08",
+        "GeneratorId": "arn:aws:guardduty:us-west-2:123456789012:detector/012343feb722b1388a5ddc6dd4abcdef",
+        "FirstObservedAt": "2021-01-05T01:15:01.549Z",
+        "CreatedAt": "2021-01-05T01:15:01.549Z",
+        "RecordState": "ACTIVE",
+        "Title": "EC2 instance i-99999999 communicating outbound with C&C Server.",
+        "Workflow": {
+          "Status": "NEW"
+        },
+        "LastObservedAt": "2021-01-05T01:15:01.549Z",
+        "Severity": {
+          "Normalized": 80,
+          "Label": "HIGH",
+          "Product": 8
+        },
+        "UpdatedAt": "2021-01-05T01:15:01.549Z",
+        "WorkflowState": "NEW",
+        "ProductFields": {
+          "aws/guardduty/service/additionalInfo/threatListName": "GeneratedFindingThreatListName",
+          "aws/guardduty/service/action/networkConnectionAction/remotePortDetails/portName": "SMTP",
+          "aws/guardduty/service/archived": "false",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/organization/asnOrg": "GeneratedFindingASNOrg",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/geoLocation/lat": "0",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/ipAddressV4": "198.51.100.0",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/geoLocation/lon": "0",
+          "aws/guardduty/service/action/networkConnectionAction/blocked": "false",
+          "aws/guardduty/service/action/networkConnectionAction/remotePortDetails/port": "25",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/country/countryName": "GeneratedFindingCountryName",
+          "aws/guardduty/service/serviceName": "guardduty",
+          "aws/guardduty/service/action/networkConnectionAction/localIpDetails/ipAddressV4": "10.0.0.23",
+          "aws/guardduty/service/detectorId": "012343feb722b1388a5ddc6dd4abcdef",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/organization/org": "GeneratedFindingORG",
+          "aws/guardduty/service/action/networkConnectionAction/connectionDirection": "OUTBOUND",
+          "aws/guardduty/service/eventFirstSeen": "2021-01-05T01:15:01.549Z",
+          "aws/guardduty/service/eventLastSeen": "2021-01-05T01:15:01.549Z",
+          "aws/guardduty/service/evidence/threatIntelligenceDetails.0_/threatListName": "GeneratedFindingThreatListName",
+          "aws/guardduty/service/action/networkConnectionAction/localPortDetails/portName": "Unknown",
+          "aws/guardduty/service/action/actionType": "NETWORK_CONNECTION",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/city/cityName": "GeneratedFindingCityName",
+          "aws/guardduty/service/resourceRole": "TARGET",
+          "aws/guardduty/service/action/networkConnectionAction/localPortDetails/port": "2000",
+          "aws/guardduty/service/action/networkConnectionAction/protocol": "TCP",
+          "aws/guardduty/service/count": "1",
+          "aws/guardduty/service/additionalInfo/sample": "true",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/organization/asn": "-1",
+          "aws/guardduty/service/action/networkConnectionAction/remoteIpDetails/organization/isp": "GeneratedFindingISP",
+          "aws/guardduty/service/evidence/threatIntelligenceDetails.0_/threatNames.0_": "GeneratedFindingThreatName",
+          "aws/securityhub/FindingId": "arn:aws:securityhub:us-west-2::product/aws/guardduty/arn:aws:guardduty:us-west-2:123456789012:detector/012343feb722b1388a5ddc6dd4abcdef/finding/1234680e481690b44f7cc7e221abcdef",
+          "aws/securityhub/ProductName": "GuardDuty",
+          "aws/securityhub/CompanyName": "Amazon"
+        },
+        "AwsAccountId": "123456789012",
+        "Id": "arn:aws:guardduty:us-west-2:123456789012:detector/012343feb722b1388a5ddc6dd4abcdef/finding/1234680e481690b44f7cc7e221abcdef",
+        "Resources": [
+          {
+            "Partition": "aws",
+            "Type": "AwsEc2Instance",
+            "Details": {
+              "AwsEc2Instance": {
+                "Type": "m3.xlarge",
+                "VpcId": "GeneratedFindingVPCId",
+                "ImageId": "ami-99999999",
+                "IpV4Addresses": [
+                  "10.0.0.1",
+                  "198.51.100.0"
+                ],
+                "SubnetId": "GeneratedFindingSubnetId",
+                "LaunchedAt": "2016-08-02T02:05:06Z",
+                "IamInstanceProfileArn": "arn:aws:iam::123456789012:example/instance/profile"
+              }
+            },
+            "Region": "us-west-2",
+            "Id": "arn:aws:ec2:us-west-2:123456789012:instance/i-99999999",
+            "Tags": {
+              "GeneratedFindingInstaceTag7": "GeneratedFindingInstaceTagValue7",
+              "GeneratedFindingInstaceTag8": "GeneratedFindingInstaceTagValue8",
+              "GeneratedFindingInstaceTag9": "GeneratedFindingInstaceTagValue9",
+              "GeneratedFindingInstaceTag1": "GeneratedFindingInstaceValue1",
+              "GeneratedFindingInstaceTag2": "GeneratedFindingInstaceTagValue2",
+              "GeneratedFindingInstaceTag3": "GeneratedFindingInstaceTagValue3",
+              "GeneratedFindingInstaceTag4": "GeneratedFindingInstaceTagValue4",
+              "GeneratedFindingInstaceTag5": "GeneratedFindingInstaceTagValue5",
+              "GeneratedFindingInstaceTag6": "GeneratedFindingInstaceTagValue6"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

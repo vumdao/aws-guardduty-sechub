@@ -1,0 +1,3 @@
+name: aws-guardduty-sechub
+runtime: nodejs
+description: Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty, plus, send HIGH severity findings to slack channel
